@@ -44,7 +44,7 @@ public class AppFrame extends JFrame implements ActionListener {
             int response=fileChooser.showSaveDialog(null);
             if(response==JFileChooser.APPROVE_OPTION){
                 File file=new File(fileChooser.getSelectedFile().getAbsolutePath());
-                System.out.println(file);
+                //System.out.println(file);
                 try{
                     Compressor.method(file);
                 }
@@ -60,7 +60,7 @@ public class AppFrame extends JFrame implements ActionListener {
             int response=fileChooser.showSaveDialog(null);
             if(response==JFileChooser.APPROVE_OPTION){
                 File file=new File(fileChooser.getSelectedFile().getAbsolutePath());
-                System.out.println(file);
+                //System.out.println(file);
                 try{
                     Decompressor.method(file);
                 }
